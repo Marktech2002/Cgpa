@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GP calculator | made by ijuswantsoft();</title>
+    <!-- my css file -->
+    <link rel="stylesheet" type="text/css" href="/styles/style.css" />
+</head>
+
+<body>
+    <!-- the navbar for the calculator page -->
+    <nav>
+        <h2 class="logo">GPA calculator</h2>
+    </nav>
+    <!-- header -->
+    <header class="calculator-header">
+        <div class="text-hd">
+            <p>
+                Calculate your college GPA and cumulative GPA, check your grades and
+                understand how the GPA scale works.
+            </p>
+        </div>
+    </header>
+
+    <!-- input section -->
+    <section class="box">
+        <center>
+            <h2>YOUR DETAILS</h2>
+        </center>
+        <div id="course-wrapper">
+            <form class="key-${counter}">
+                <input type="text" placeholder="Course title" class="courses key-${counter}" required>
+                <input type="number" placeholder="Unit" class="credit-units key-${counter}" required>
+                <select class="grade key-${counter}" required>
+                    <option value="" selected disabled hidden></option>
+                    <option value="5">A</option>
+                    <option value="4">B</option>
+                    <option value="3">C</option>
+                    <option value="2">D</option>
+                    <option value="1">E</option>
+                    <option value="0">F</option>
+                </select>
+            </form>
+        </div>
+        <div class="btn">
+            <button onclick="addCourse()" class="add-course">Add Course</button>
+            <button onclick="removeCourse()" class="add-course">Remove</button>
+        </div>
+        <div class="result-sct">
+            <p style="margin-top: 50px" id="final-gpa">
+                Your CGpa is : 5.00
+            </p>
+        </div>
+    </section>
+    <div class="btn">
+        <button onclick="Calgpa()" class="compute add-course">Calculate</button>
+    </div>
+
+    <footer>
+        <div class="soft">
+            <a href="#">My Github</a>
+            <p>Made by iJustWanSoft(🙌);</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
